@@ -1,5 +1,5 @@
 // Make a get request to our api route that will return every "long" horse (300 pages or more)
-$.get("/api/horses/long", function(data) {
+$.get("/api/age/old", function(data) {
 
   // For each horse that our server sends us back
   for (var i = 0; i < data.length; i++) {
@@ -13,9 +13,11 @@ $.get("/api/horses/long", function(data) {
     $("#well-section").append(wellSection);
 
     // Now  we add our horse data to the well we just placed on the page
-    $("#horse-well-" + i).append("<h2>" + (i + 1) + ". " + data[i].title + "</h2>");
-    $("#horse-well-" + i).append("<h3>Author: " + data[i].author + "</h4>");
-    $("#horse-well-" + i).append("<h3>Genre: " + data[i].genre + "</h4>");
-    $("#horse-well-" + i).append("<h3>Pages: " + data[i].pages + "</h4>");
+    $("#horse-well-" + i).append("<h2>" + (i + 1) + ". " + "</h2>");
+    $("#horse-well-" + i).append("<h3> Name :" + data[i].name + "</h3>");
+    $("#horse-well-" + i).append("<h3> Sire :" + data[i].sire + "</h4>");
+    $("#horse-well-" + i).append("<h3> Mare :" + data[i].mare + "</h4>");
+    $("#horse-well-" + i).append("<h3> Age  :" + data[i].age + "</h4>");
+    $("#horse-well-" + i).append("<h3> Gender : " + data[i].gender + "</h4>");
   }
 });

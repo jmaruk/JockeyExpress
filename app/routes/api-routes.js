@@ -14,8 +14,6 @@ module.exports = function (app) {
   // Sequelize code to get all horses and return them as JSON
   app.get("/api/all", function (req, res) {
     Horse.findAll({}).then(function (results) {
-      console.log(results);
-      console.log("********************")
       res.json(results);
     });
   });
@@ -32,10 +30,10 @@ module.exports = function (app) {
   });
 
   // Sequelize code to get all horses  of a specific gender and return them as JSON
-  app.get("/api/:gender", function (req, res) {
+  app.get("/api/gender/:gender", function (req, res) {
     Horse.findAll({
       where: {
-        name: req.params.gender
+        gender: req.params.gender
       }
     }).then(function (results) {
       res.json(results);
@@ -84,11 +82,11 @@ module.exports = function (app) {
   // Add sequelize code to create a horse
   app.post("/api/new", function (req, res) {
     Horse.create({
-      age:req.body.age,
-      gender:req.body.gender,
-      name:req.body.name,
-      sire:req.body.sire,
-      mare:req.body.mare
+      age: req.body.age,
+      gender: req.body.gender,
+      name: req.body.name,
+      sire: req.body.sire,
+      mare: req.body.mare
     })
   });
 
@@ -96,7 +94,7 @@ module.exports = function (app) {
   app.post("/api/delete", function (req, res) {
     Horse.destroy({
       where: {
-        id:req.body.id
+        id: req.body.id
       }
     });
   });

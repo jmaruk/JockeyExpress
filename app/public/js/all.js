@@ -1,9 +1,7 @@
 
 // Make a get request to our api route that will return every horse
 $.get("/api/all", function(data) {
-  console.log(data);
-  console.log("---------------")
-  // For each horse that our server sends us back
+    // For each horse that our server sends us back
   for (var i = 0; i < data.length; i++) {
     // Create a parent div to hold horse data
     var wellSection = $("<div>");
