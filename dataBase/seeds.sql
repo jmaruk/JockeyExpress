@@ -1,5 +1,7 @@
 INSERT INTO horse (age, gender, name, sire, mare ) 
 VALUES (5,'G', "Best of the Blues", "Eastwood Decat", "Blues Apparition");
+INSERT INTO horse (age, gender, name, sire, mare, createdAt, updatedAt ) 
+VALUES (3,'G', "Go For Moonshine", "Old Fashioned", "Go For The Moon",2018-06-17 23:14:00, 2018-06-17 23:14:00);
 
 
 
@@ -9,9 +11,17 @@ VALUES (5,'G', "Best of the Blues", "Eastwood Decat", "Blues Apparition");
 
 5,G,Best of the Blues,Eastwood Decat,Blues Apparition 
 4,F,Cause to Wonder,Eskendraya,Female Drama
+
 4,F,Yankee Pride,Proud Citizen ,Yankee Dooodle Girl
+
 3,C,Strong Current,Orb,Summer Cruise 
+
+
+
 3,G,Zero Gravity,Orb,Freedom Rings
+
+
+
 3,G,Go For Moonshine,Old Fashioned,Go For The Moon 
 3,,Nobutzaboutit,Proud Citizen ,Yankee Dooodle Girl
 3,G,Lovanksol,Lovango,Pleasant Guest 
