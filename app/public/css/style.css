@@ -1,0 +1,47 @@
+.navbar {
+    background-color: goldenrod !important;
+}
+
+.navbar-brand {
+    color: royalblue !important;
+}
+
+.nav-link {
+    color: royalblue !important;
+}
+
+.navbar .nav-item .dropdown-menu .dropdown-item {
+    color: royalblue !important;
+   
+}
+
+.navbar .nav-item .dropdown-menu .dropdown-item:hover {
+    color: royalblue !important;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.navbar-toggler {
+    color: royalblue !important;
+}
+
+.btn {
+    color: royalblue !important;
+    background-color: goldenrod !important;
+}
+
+.jumbotron {
+    margin-top: 20px;
+    background-image: url("https://cdn.pixabay.com/photo/2016/05/15/17/55/horse-1394093_1280.jpg");
+    background-size: cover;
+    color: royalblue;
+}
+
+.card {
+    color: royalblue !important;
+    background-color: goldenrod !important;
+}
+
+body {
+    background-color: rgb(6, 77, 3);
+}
