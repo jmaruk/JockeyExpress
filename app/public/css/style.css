@@ -32,20 +32,28 @@
 
 .jumbotron {
     margin-top: 20px;
-    background-image: url("https://cdn.pixabay.com/photo/2016/05/15/17/55/horse-1394093_1280.jpg");
+    background-image: url("http://www.aelyaen.com/file/2018/01/5_basic_things_your_horse_needs.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
     color: royalblue;
     font-family: cursive;
+    opacity: .92;
 }
 
 .card {
     color: royalblue !important;
     background-color: goldenrod !important;
     font-family: cursive;
+    opacity: .95 !important;
+
 }
 
 body {
-    background-color: rgb(6, 77, 3);
+    background-image:url("http://louisvilleky.com/wp-content/uploads/2015/07/Screen-Shot-2015-07-09-at-3.16.06-PM.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .glyphicon {
