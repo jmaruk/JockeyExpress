@@ -41,7 +41,7 @@ $("#gender-search-btn").on("click", function () {
 //Function render AJAX response. ---Query results
 function renderhorses(data) {
   if (data.length !== 0) {
-    $("#tbody").empty('');
+    $("tbody").empty();
     $("#stats").show();
     console.log("====================");
     console.log(data);
