@@ -1,23 +1,22 @@
 
 // Make a get request to our api route that will return every horse
 $.get("/api/all", function(data) {
-    // For each horse that our server sends us back
-  for (var i = 0; i < data.length; i++) {
-    // Create a parent div to hold horse data
-    var wellSection = $("<div>");
-    // Add a class to this div: 'well'
-    wellSection.addClass("well");
-    // Add an id to the well to mark which well it is
-    wellSection.attr("id", "horse-well-" + i);
-    // Append the well to the well section
-    $("#well-section").append(wellSection);
-
-    // Now  we add our horse data to the well we just placed on the page
-    $("#horse-well-" + i).append("<h2>" + (i + 1) + ". " + "</h2>");
-    $("#horse-well-" + i).append("<h3> Name :" + data[i].name + "</h3>");
-    $("#horse-well-" + i).append("<h3> Sire :" + data[i].sire + "</h4>");
-    $("#horse-well-" + i).append("<h3> Mare :" + data[i].mare + "</h4>");
-    $("#horse-well-" + i).append("<h3> Age  :" + data[i].age + "</h4>");
-    $("#horse-well-" + i).append("<h3> Gender : " + data[i].gender + "</h4>");
+  if (data.length !== 0) {
+    for (var i = 0; i < data.length; i++) {
+      var tBody = $("tbody");
+      var tRow = $("<tr>");
+      var horseName = $("<td>").text(data[i].name);
+      var horseSire = $("<td>").text(data[i].sire);
+      var horseMare = $("<td>").text(data[i].mare);
+      var horseAge = $("<td>").text(data[i].age);
+      var horseGender = $("<td>").text(data[i].gender);
+      tRow.prepend(horseName, horseSire,horseMare,horseAge,horseGender);
+      tBody.prepend(tRow);
+    }
   }
 });
+
+
+
+
+
