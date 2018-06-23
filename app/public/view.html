@@ -17,14 +17,19 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="parallax">
+
+    <!--Navegation Bar-->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <a class="navbar-brand" href="view.html">Jockey Express</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+          aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
 
             </li>
@@ -32,7 +37,8 @@
               <a class="nav-link" href="links.html">Resources</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
                 Features
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -40,101 +46,126 @@
                 <a class="dropdown-item" href="all.html">All Horses</a>
                 <a class="dropdown-item" href="short.html">Weanlings</a>
                 <a class="dropdown-item" href="long.html">Yearlings</a>
-                <div class="dropdown-divider"></div>    
+                <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="view.html">Horse Search</a>
               </div>
             </li>
           </ul>
         </div>
       </nav>
-
-  <div class="container">
-
-    <div class="jumbotron" style="text-align: center">
-      <h1>
-        <span class="fa fa-bolt"></span> Jockey Express
-        <span class="fa fa-bolt"></span>
-      </h1>
-      <h3>JB Racing Stables</h3>
-      <hr>
-      <a href="/" class="btn btn-danger btn-lg">
-        <span class="fa fa-eye"></span> Search horses</a>
-      <a href="/add" class="btn btn-danger btn-lg">
-        <span class="fa fa-plus"></span> Add New horse</a>
-      <a href="/all" class="btn btn-danger btn-lg">
-        <span class="fa fa-th-list"></span> All horses</a>
-      <a href="/long" class="btn btn-danger btn-lg">
-        <span class="fa fa-th-list"></span>Yearlings</a>
-      <a href="/short" class="btn btn-danger btn-lg">
-        <span class="fa fa-th-list"></span>Weanlings</a>
     </div>
-    <div class="row">
+    <br>
+    <br>
+    <br>
 
-      <div class="col-lg-12">
+    <div class="container">
 
-        <div class="card mb-4">
-          <div class="card-header">
-            <h3 class="card-title">
-              <strong>Horse Search (Name)</strong>
-            </h3>
-          </div>
-          <div class="card-body">
-            <input type="text" id="horse-search" class="form-control">
-            <br>
-            <div class="text-right">
-              <button class="btn btn-primary btn-md" id="search-btn">
-                <span class="fa fa-search"></span> Search</button>
+      <div class="jumbotron" style="text-align: center">
+        <h1>
+          <span class="fa fa-bolt"></span> Jockey Express
+          <span class="fa fa-bolt"></span>
+        </h1>
+        <h3>JB Racing Stables</h3>
+        <hr>
+        <a href="/" class="btn btn-danger btn-lg">
+          <span class="fa fa-eye"></span> Search horses</a>
+        <a href="/add" class="btn btn-danger btn-lg">
+          <span class="fa fa-plus"></span> Add New horse</a>
+        <a href="/all" class="btn btn-danger btn-lg">
+          <span class="fa fa-th-list"></span> All horses</a>
+        <a href="/long" class="btn btn-danger btn-lg">
+          <span class="fa fa-th-list"></span>Yearlings</a>
+        <a href="/short" class="btn btn-danger btn-lg">
+          <span class="fa fa-th-list"></span>Weanlings</a>
+      </div>
+      <div class="row">
+
+        <div class="col-lg-12">
+
+          <div class="card mb-4">
+            <div class="card-header">
+              <h3 class="card-title">
+                <strong>Horse Search (Name)</strong>
+              </h3>
+            </div>
+            <div class="card-body">
+              <input type="text" id="horse-search" class="form-control">
+              <br>
+              <div class="text-right">
+                <button class="btn btn-primary btn-md" id="search-btn">
+                  <span class="fa fa-search"></span> Search</button>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="card mb-4">
-          <div class="card-header">
-            <h3 class="card-title">
-              <strong>Sire Search</strong>
-            </h3>
-          </div>
-          <div class="card-body">
-            <input type="text" id="sire-search" class="form-control">
-            <br>
-            <div class="text-right">
-              <button class="btn btn-primary btn-md" id="sire-search-btn">
-                <span class="fa fa-search"></span> Search</button>
+          <div class="card mb-4">
+            <div class="card-header">
+              <h3 class="card-title">
+                <strong>Sire Search</strong>
+              </h3>
+            </div>
+            <div class="card-body">
+              <input type="text" id="sire-search" class="form-control">
+              <br>
+              <div class="text-right">
+                <button class="btn btn-primary btn-md" id="sire-search-btn">
+                  <span class="fa fa-search"></span> Search</button>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="card mb-4">
-          <div class="card-header">
-            <h3 class="card-title">
-              <strong>Gender Search</strong>
-            </h3>
-          </div>
-          <div class="card-body">
-            <input type="text" id="gender-search" class="form-control">
-            <br>
-            <div class="text-right">
-              <button class="btn btn-primary btn-md" id="gender-search-btn">
-                <span class="fa fa-search"></span> Search</button>
+          <div class="card mb-4">
+            <div class="card-header">
+              <h3 class="card-title">
+                <strong>Gender Search</strong>
+              </h3>
+            </div>
+            <div class="card-body">
+              <input type="text" id="gender-search" class="form-control">
+              <br>
+              <div class="text-right">
+                <button class="btn btn-primary btn-md" id="gender-search-btn">
+                  <span class="fa fa-search"></span> Search</button>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="card mb-4">
-          <div class="card-header">
-            <h3 class="card-title">
-              <strong>Quert Results</strong>
-            </h3>
-          </div>
-          <div class="card-body">
-            <div class="well" id="stats">
-              <!-- This is where the results appear -->
+          <div class="card mb-4">
+            <div class="card-header">
+              <h3 class="card-title">
+                <strong>Quert Results</strong>
+              </h3>
             </div>
+            
+            <div class="card-body" id="stats">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Horse name</th>
+                    <th>Sire</th>
+                    <th>Mare</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Delete</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Insert Horse data here -->
+                </tbody>
+              </table>
+            </div>
+
           </div>
         </div>
       </div>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
     </div>
-  </div>
   </div>
   <!-- Custom Script -->
   <script src="js/view.js" type="text/javascript"></script>

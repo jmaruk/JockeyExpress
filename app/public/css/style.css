@@ -1,3 +1,5 @@
+
+
 .navbar {
     background-color: goldenrod !important;
 }
@@ -32,9 +34,11 @@
 
 .jumbotron {
     margin-top: 20px;
-    background-image: url("http://www.aelyaen.com/file/2018/01/5_basic_things_your_horse_needs.jpg");
+    /* background-image: url("http://www.aelyaen.com/file/2018/01/5_basic_things_your_horse_needs.jpg"); */
+    /* background-image: url("../images/horesesR.jpg"); */
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #dddddd;
     color: royalblue;
     font-family: cursive;
     opacity: .92;
@@ -48,15 +52,42 @@
 
 }
 
-body {
-    background-image:url("http://louisvilleky.com/wp-content/uploads/2015/07/Screen-Shot-2015-07-09-at-3.16.06-PM.png");
+
+.parallax {
+    background-image: url("http://louisvilleky.com/wp-content/uploads/2015/07/Screen-Shot-2015-07-09-at-3.16.06-PM.png");
+    height: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+
+
+/* body {
+    background-image:url("http://louisvilleky.com/wp-content/uploads/2015/07/Screen-Shot-2015-07-09-at-3.16.06-PM.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
 .glyphicon {
     color: royalblue !important;
 }
 
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 0px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
